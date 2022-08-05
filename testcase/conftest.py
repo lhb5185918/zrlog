@@ -4,7 +4,7 @@ import pytest
 import requests
 @pytest.fixture(scope='function')
 def get_token():
-    url = 'http://124.70.94.252:8000/api/admin/login'
+    url = 'http://101.43.155.83:8888/api/admin/login'
     data = {"userName":"admin","password":"0bf439abd5791b36a5d5e61cd326617b","https":"false"}
     header = {"Content-Type":"application/json;charset=UTF-8"}
     res = requests.post(url=url,json=data,headers=header)
